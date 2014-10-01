@@ -1,7 +1,7 @@
-body{
+html, body{
 	background: #F79F9F url("bg.png") repeat left top;
-	height:2000px;
-	overflow:hidden;
+	overflow: hidden;
+	height: 100%
 }
 
 #wheelcanvas {
