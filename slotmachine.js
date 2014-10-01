@@ -27,6 +27,6 @@ $("#slotMachineButtonStop").click(function(){
 $('#slotMachineButtonAgain').click(function(){
 	$('html, body').animate({ scrollTop: 0 }, 'slow');
 	setTimeout(function(){
-		window.location.replace("http://localhost/spin/");
+		window.location.replace("http://rienierpatron.github.io/roulette/");
 }, 900);
 });
