@@ -140,7 +140,6 @@ function rotateWheel() {
 	var set = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
 	var digit = Math.floor((Math.random() * set) + 1);
 	var time = Math.floor((Math.random() * digit) + 1);
-	console.log(time);
 	spinTime += time;
 	if(spinTime >= spinTimeTotal) {
 		stopRotateWheel();
