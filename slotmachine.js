@@ -1,6 +1,6 @@
 var machine = $("#machine").slotMachine({
 	active	: 0,
-	delay	: 500
+	delay	: 700
 });
 $('#slotMachineButtonShuffle').click(function(){
 	$(this).hide();
@@ -19,7 +19,7 @@ $("#slotMachineButtonStop").click(function(){
 			$("#slotMachineButtonWaiting").hide();
 			$("#slotMachineMessage").show();
 			$("#slotMachineButtonAgain").show();
-		}, 3000);
+		}, 2900);
 		
 	}
 	
