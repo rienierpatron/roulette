@@ -1,7 +1,7 @@
 html, body{
 	background: #F79F9F url("bg.png") repeat left top;
 	overflow: hidden;
-	height: 100%
+	height: 2000px;
 }
 
 #wheelcanvas {
@@ -107,10 +107,10 @@ html, body{
 	width:300px;
 	height:300px;
 }
-.slot1{
-	background-image: url("slot1.png");
+.slot1, .slot4, .slot9, .slot13{
+	background-image: url("slot1.jpg");
 }
-.slot2{
+.slot2, .slot7, .slot11{
 	background-image: url("slot2.jpg");
 }
 .slot3{
@@ -121,4 +121,10 @@ html, body{
 }
 .slot5{
 	background-image: url("slot5.jpg");
+}
+.slot6, .slot2, .slot12, .slot15{
+	background-image: url("slot6.jpg");
+}
+.slot7{
+	background-image: url("slot7.jpg");
 }

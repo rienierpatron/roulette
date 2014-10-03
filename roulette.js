@@ -12,7 +12,7 @@ var counterLose = 0;
 var $lastInput = "";
 
 for(var count = 0; count < totalCount; count++){
-	if(count == 10){
+	if(count == 10 || count == 3){
 		results.push("WIN");
 		counterWin = counterWin+1;
 	}else{
@@ -31,10 +31,10 @@ var spinTime = 0;
 	var spinTimeTotal = 0;
 
 var canvas = document.getElementById("wheelcanvas");
-canvas.width = 600;
-canvas.height = 600;
+canvas.width = 500;
+canvas.height = 500;
 
-var base = 600;
+var base = 500;
 	var baseOver2 = base/2;
 	var gameFont = 'bold 30px sans-serif';
 
@@ -73,14 +73,16 @@ function drawRouletteWheel() {
 		ctx.strokeStyle = "#FFFFFF"; //stroke color
 		ctx.lineWidth = 20;
 
-		ctx.font = 'bold 30px sans-serif';
+		
 
 		for(var i = 0; i < size; i++) { // < n in loop show the number of divisions
 			var angle = startAngle + i * arc;
 			var text = results[i];
 			if(text == "WIN"){
+				ctx.font = 'bold 20px sans-serif';
 				ctx.fillStyle = "#EB3F3C";
 			}else{
+				ctx.font = 'bold 10px sans-serif';
 				ctx.fillStyle = "#40474D";
 			}
 			ctx.beginPath();
@@ -128,14 +130,18 @@ function drawRouletteWheel() {
 function spin() {
 	spinAngleStart = Math.random() * 10 + 10;
 	spinTime = 0;
-	spinTimeTotal = Math.random() * 3 + 4 * 1000;
+	spinTimeTotal = Math.random() * 3 + 3 * 1000;
 	rotateWheel();
 }
 
 function rotateWheel() {
 	$('#spinner').hide();
 	$('#wait').show();
-	spinTime += 5;
+	var set = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
+	var digit = Math.floor((Math.random() * set) + 1);
+	var time = Math.floor((Math.random() * digit) + 1);
+	console.log(time);
+	spinTime += time;
 	if(spinTime >= spinTimeTotal) {
 		stopRotateWheel();
 		return;
@@ -175,7 +181,6 @@ function stopRotateWheel() {
 			$('#reset').show();
 		}
 	}
-	ctx.fillText(resultText, baseOver2 - ctx.measureText(resultText).width / 2, baseOver2 + 10);
 	ctx.restore();
 }
 
