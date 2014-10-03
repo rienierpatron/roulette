@@ -1,0 +1,11 @@
+$(document).ready(function(){
+	$('#wait').hide();
+	$('#reset').hide();
+	draw();
+	$('#spinner').click(function(){
+		spin();
+	});
+	$('#reset').click(function(){
+		window.location.replace("http://rienierpatron.github.io/roulette/");
+	});
+});
