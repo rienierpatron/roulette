@@ -1,5 +1,5 @@
-html, body{
-	background: #F79F9F url("bg.png") repeat left top;
+body{
+	background: #F79F9F url("bg.png");
 	overflow: hidden;
 	height: 2000px;
 }
