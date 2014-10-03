@@ -107,24 +107,48 @@ html, body{
 	width:300px;
 	height:300px;
 }
-.slot1, .slot4, .slot9, .slot13{
+.slot1{
 	background-image: url("slot1.jpg");
 }
-.slot2, .slot7, .slot11{
+.slot2{
 	background-image: url("slot2.jpg");
 }
 .slot3{
-	background-image: url("slot3.jpg");
+	background-image: url("slot6.jpg");
 }
 .slot4{
-	background-image: url("slot4.jpg");
+	background-image: url("slot1.jpg");
 }
 .slot5{
-	background-image: url("slot5.jpg");
+	background-image: url("slot3.jpg");
 }
-.slot6, .slot2, .slot12, .slot15{
+.slot6{
 	background-image: url("slot6.jpg");
 }
 .slot7{
 	background-image: url("slot7.jpg");
+}
+.slot8{
+	background-image: url("slot6.jpg");
+}
+.slot9{
+	background-image: url("slot4.jpg");
+}
+.slot10{
+	background-image: url("slot1.jpg");
+}
+.slot11{
+	background-image: url("slot5.jpg");
+}
+.slot12{
+	background-image: url("slot1.jpg");
+}
+.slot13{
+	background-image: url("slot4.jpg");
+}
+.slot14{
+	background-image: url("slot3.jpg");
+}
+.slot15{
+	background-image: url("slot2.jpg");
 }
